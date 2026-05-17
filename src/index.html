@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Proyecto Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0,0,0,.08);
+    }
+
+    .version {
+      font-size: .75rem;
+      color: #999;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: .95rem;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+
+    .chip {
+      padding: 5px 14px;
+      background: #f0f0f0;
+      border-radius: 999px;
+      font-size: .8rem;
+      color: #444;
+    }
+
+    .cmd-box {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 20px 24px;
+      font-family: monospace;
+      font-size: .85rem;
+      color: #ccc;
+      line-height: 2;
+    }
+
+    .cmd-box .green { color: #4ade80; }
+
+    footer {
+      margin-top: 32px;
+      font-size: .78rem;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="card">
+      <div class="version">2DAW · UT6 · 2025-2026</div>
+      <h1>Mi Proyecto Web</h1>
+      <p>Proyecto desplegado con Docker y Nginx, gestionado con Git y documentado en Markdown.</p>
+
+      <div class="stack">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">Docker</span>
+        <span class="chip">Nginx</span>
+        <span class="chip">Git</span>
+      </div>
+
+      <div class="cmd-box">
+        <span class="green">$</span> git clone https://github.com/usuario/proyecto<br>
+        <span class="green">$</span> docker compose up -d
+      </div>
+    </div>
+
+    <footer>Accesible en http://localhost:8080</footer>
+  </div>
+</body>
+</html>
